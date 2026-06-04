@@ -1,9 +1,29 @@
 import React from 'react'
 import Business from './fakeBiz.js'
-import * as reactBootstrap from 'https://esm.run/react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+export function ContainerExample() {
+  return (
+    <Container>
+      <Row>
+        <Col>1 of 3</Col>
+        <Col>2 of 3</Col>
+        <Col>3 of 3</Col>
+      </Row>
+      <Row>
+        <Col>2 of 2</Col>
+      </Row>
+    </Container>
+    
+  );
+}
 
 function compBusiness() {
-    return <Business />;
+    return <Business />
+
+
 }
 
 export default compBusiness;
