@@ -9,3 +9,5 @@ function searchBar() {
         </div>
     )
 }
+
+export default searchBar;
